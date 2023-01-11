@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 2.4rem 6.2rem;
+  margin: 0 auto;
+}
+
+hr {
+  border: none;
+  border-top: 0.8rem solid #222;
+  color: rgb(9, 63, 110);
+}
+
+/* ************************* */
+/* NAVIGATION */
+/* ************************* */
+.header {
+  height: 120vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(./img/Netflix.png);
+}
+
+.nav--lists {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+}
+
+.nav--list {
+  margin-left: auto;
+  padding-right: 3.2rem;
+}
+
+.nav--dropdown select {
+  background: transparent;
+  color: #fff;
+  padding: 0.9rem 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+select::-ms-expand {
+  color: green;
+}
+
+.nav--sign {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  background-color: red;
+  padding: 0.9rem 2.4rem;
+  border-radius: 4px;
+}
+
+/* *********************************** */
+/* INTRO */
+/* *********************************** */
+.section--intro {
+  padding: 9.6rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+.heading--primary {
+  font-size: 5.2rem;
+  font-weight: 600;
+  margin: 4rem 11rem;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  margin-bottom: 1.8rem;
+}
+
+.heading--info {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.heading-more--info {
+  font-size: 2.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.email {
+  width: 70%;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  transform: all 1s;
+  position: relative;
+}
+
+.email:focus {
+  outline: none;
+}
+
+.email:focus.email::placeholder {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 700;
+  top: 0.015rem;
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: red;
+  border: none;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.btn--started {
+  width: 20%;
+}
+
+/* ********************************** */
+/* ENJOY SECTION */
+/* ********************************** */
+main {
+  background-color: black;
+}
+
+.section--enjoy {
+  padding: 5.4rem 0;
+  color: #fff;
+}
+
+.enjoy--box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.heading--secondary {
+  font-size: 5.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.enjoy--info {
+  font-size: 2.4rem;
+}
+
+.enjoy-img--box {
+  text-align: center;
+}
+
+.enjoy-card--img {
+  width: 90%;
+}
+
+/* ************************** */
+/* WATCH SECTION */
+/* ************************** */
+.section--watch {
+  padding: 5.4rem 0;
+  color: #fff;
+}
+
+.watch--box {
+  display: flex;
+  align-items: center;
+}
+
+.watch-card--img {
+  width: 100%;
+}
+
+.watch--info {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+/* *********************************** */
+/* EVERYWHERE SECTION */
+/* *********************************** */
+.section--everywhere {
+  padding: 5.4rem 0;
+  color: #fff;
+}
+
+.everywhere--info {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+.everywhere--box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.everywhere-card--img {
+  width: 90%;
+}
+
+/* *********************************** */
+/* PROFILE SECTION */
+/* *********************************** */
+.section--profile {
+  padding: 5.4rem 0;
+  color: #fff;
+}
+
+.profile--box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17rem;
+}
+
+.profile--info {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+.profile-card--img {
+  width: 150%;
+}
+
+/* *********************************** */
+/* QUESTIONS SECTION */
+/* *********************************** */
+.section--questions {
+  padding: 5.4rem 0 2.2rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+.accordian {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  margin-top: 5.2rem;
+}
+
+.item {
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 92fr 7fr;
+  background-color: #333;
+  position: relative;
+}
+
+.text {
+  align-self: center;
+}
+
+.heading--tertiary {
+  font-size: 2.6rem;
+  font-weight: 500;
+  padding: 2rem 2.5rem;
+  justify-self: start;
+  grid-column: 1 / -1;
+}
+
+.btn--action {
+  background-color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: none;
+}
+
+.btn--open,
+.btn--close {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.item hr {
+  border: none;
+  border-top: 1px solid black;
+}
+
+.text {
+  text-align: start;
+  font-size: 2.2rem;
+  padding: 3rem;
+  line-height: 1.4;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden--box {
+  grid-column: 1 / -1;
+  transform: all 1s ease-out;
+  display: none;
+}
+
+.open .hidden--box {
+  display: block;
+}
+
+/* *************************** */
+/* NEWS LETTER SECTION */
+/* *************************** */
+.section--letter {
+  padding: 2.2rem 0 4.4rem;
+}
+
+.heading-more--info {
+  text-align: center;
+  color: #fff;
+}
+
+/* .section--letter .container {
+  text-align: center;
+} */
+
+.section--letter #form {
+  display: flex;
+  justify-content: center;
+}
+
+.section--letter #form .email {
+  width: 50%;
+}
+
+/* ************************************* */
+/* FOOTER SECTION */
+/* ************************************* */
+.footer {
+  padding: 6.6rem 12rem;
+  background-color: black;
+}
+
+.question {
+  margin-bottom: 2.4rem;
+  margin-left: 6rem;
+  font-size: 2rem;
+  color: #888;
+}
+
+.question .phone {
+  color: #888;
+  text-decoration: none;
+}
+
+.question .phone:hover {
+  text-decoration: underline;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav--lists {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #888;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.ml-6 {
+  margin-left: 6rem;
+}
