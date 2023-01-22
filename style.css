@@ -387,3 +387,60 @@ main {
 .ml-6 {
   margin-left: 6rem;
 }
+
+/* 1045px */
+@media (max-width: 1045px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 935px) {
+  html {
+    font-size: 52%;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 865px) {
+  html {
+    font-size: 54%;
+  }
+
+  .heading--primary {
+    margin: 0 2.2rem 2.8rem 2.2rem;
+    margin-top: 32rem;
+  }
+}
+
+@media (max-width: 755px) {
+  html {
+    font-size: 40%;
+  }
+
+  .container {
+    padding-top: 8rem;
+  }
+}
+
+@media (max-width: 661px) {
+  html {
+    font-size: 36%;
+  }
+}
+
+@media (max-width: 548px) {
+  .container {
+    padding: 4.4rem 2.2rem;
+  }
+
+  .heading--primary {
+    margin-top: 44rem;
+    margin-bottom: 3.8rem;
+  }
+}
