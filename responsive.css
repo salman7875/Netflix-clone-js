@@ -1,0 +1,55 @@
+/* RESPONSIVE */
+@media (max-width: 1668px) {
+  html {
+    font-size: 48%;
+  }
+
+  .heading--primary {
+    padding: 0 24rem;
+  }
+
+  #form .email {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1160px) {
+  html {
+    font-size: 46%;
+  }
+
+  .header {
+    height: 70vh;
+  }
+
+  .enjoy--box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .watch--box {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    text-align: center;
+    padding: 0 3rem;
+  }
+
+  .everywhere--box {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 0 3rem;
+  }
+
+  .profile--box {
+    overflow: hidden;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 0;
+    padding: 0 3rem;
+  }
+
+  .profile-card--img {
+    width: 100%;
+  }
+}
