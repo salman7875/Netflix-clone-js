@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  height: 160vh;
+  overflow-x: hidden;
+  width: 100vw;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(./img/Netflix.png);
+  object-fit: cover;
+  position: absolute;
+}
+
+.brand {
+  position: relative;
+  left: 3rem;
+}
+
+.wrap-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 40vw;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5rem;
+  color: white;
+  border-radius: 11px;
+}
+
+.wrapper h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-left: 5%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.email,
+.password {
+  width: 90%;
+  padding: 1.5rem;
+  background-color: rgb(52, 52, 52);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  color: white;
+  position: relative;
+}
+
+.email::placeholder,
+.password::placeholder {
+  color: #eee;
+}
+
+.email:focus.email::placeholder,
+.password:focus::placeholder {
+  position: absolute;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.4rem;
+  top: 3px;
+}
+
+.btn {
+  width: 90%;
+  padding: 1rem;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn a,
+.btn a:hover,
+.btn a:active {
+  color: #fff;
+  text-decoration: none;
+}
+.help {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.help .check {
+  display: flex;
+  align-items: center;
+}
+
+.check span {
+  font-size: 1.4rem;
+  padding-left: 0.4rem;
+}
+
+.help a:link,
+a:active {
+  color: #eee;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.help a:hover {
+  text-decoration: underline;
+}
+
+.sign-up--text {
+  font-size: 1.6rem;
+  color: #eee;
+  margin-bottom: 2rem;
+  padding-left: 5%;
+}
+
+.sign-up {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.sign-up:hover {
+  text-decoration: underline;
+}
+
+.desc {
+  font-size: 1.4rem;
+  padding-left: 5%;
+  color: #eee;
+}
+
+/* -------------------------------------- */
+/*               FOOTER                   */
+/* -------------------------------------- */
+.footer {
+  position: absolute;
+  background-color: #000000cf;
+  bottom: 0;
+  height: 45vh;
+  color: #fff;
+  width: 100vw;
+  padding: 5rem 15rem;
+}
+
+.foot-header .number {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.foot-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.foot-container a {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: #eee;
+  text-decoration: none;
+}
+
+.foot-container a:hover {
+  text-decoration: underline;
+}
