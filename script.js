@@ -1,5 +1,6 @@
 'use strict'
 
+// INDEX PAGE
 const btnAction = document.querySelectorAll('.btn--action')
 
 const btnOpen = document.querySelectorAll('.btn--open')

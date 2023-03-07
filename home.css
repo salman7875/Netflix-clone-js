@@ -145,18 +145,52 @@ nav {
 
 .movies-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  padding: 0;
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  gap: 2.2rem;
+  transition: all 0.5s ease-in-out;
 }
 
 .movie {
   margin-bottom: 4rem;
+  position: relative;
 }
 
 .movie img {
-  width: 99%;
+  width: 100%;
   object-fit: contain;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.slider-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-left,
+.slider-right {
+  font-size: 2rem;
+  font-weight: 700;
+  height: 11rem;
+  width: 4rem;
+  background-color: #000000c1;
+  color: #fff;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider-left {
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+}
+.slider-right {
+  position: absolute;
+  bottom: 4rem;
+  right: 10rem;
 }
