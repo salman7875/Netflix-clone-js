@@ -16,12 +16,6 @@ body {
   height: 100vh;
   width: 100vw;
   color: #fff;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url(./img/movie.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
