@@ -140,7 +140,7 @@ nav {
 .movies-container {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 21%;
+  grid-auto-columns: 15%;
   gap: 2.2rem;
   transition: all 0.5s ease-in-out;
 }
@@ -151,10 +151,15 @@ nav {
 }
 
 .movie img {
-  width: 100%;
+  width: 90%;
   object-fit: contain;
   border-radius: 4px;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
+}
+
+.movie img:hover {
+  width: 100%;
 }
 
 .slider-action {

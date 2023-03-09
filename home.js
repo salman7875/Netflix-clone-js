@@ -21,6 +21,7 @@ rightBtn.addEventListener('click', function (e) {
   movieContainer.style.transform = `translateX(-500px)`
 })
 
+// GET SINGLE POSTER MOVIE
 const fetchPosterMovie = async () => {
   const res = await fetch(`${BASE_URL}movie/popular${API_KEY}`)
   const data = await res.json()
@@ -34,18 +35,20 @@ const fetchPosterMovie = async () => {
 
 fetchPosterMovie().then(res => console.log(res[0]))
 
+// GET ALL POPULAR MOVIES
 const fetchPopularMovies = async () => {
   const res = await fetch(`${BASE_URL}movie/popular${API_KEY}`)
   const data = await res.json()
   const results = data.results
 
   results.forEach(result => {
-    const html = `
+    movieContainer.innerHTML += `
     <div class="movie">
       <img src=${`https://image.tmdb.org/t/p/w500${result.poster_path}`} />
     </div>
     `
   })
+  return results
 }
 
-fetchPopularMovies()
+fetchPopularMovies().then(res => res.map(r => console.log(r)))
