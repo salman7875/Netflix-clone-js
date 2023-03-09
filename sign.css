@@ -89,9 +89,10 @@ body {
   top: 3px;
 }
 
-.btn {
+.sign-in {
   width: 90%;
   padding: 1rem;
+  text-align: center;
   background-color: red;
   color: white;
   font-weight: 600;
@@ -100,9 +101,9 @@ body {
   cursor: pointer;
 }
 
-.btn a,
-.btn a:hover,
-.btn a:active {
+.sign-in,
+.sign-in:hover,
+.sign-in:active {
   color: #fff;
   text-decoration: none;
 }
