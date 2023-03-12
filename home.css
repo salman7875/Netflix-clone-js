@@ -193,3 +193,33 @@ nav {
   bottom: 4rem;
   right: 10rem;
 }
+
+@media (min-width: 370px) {
+  html {
+    font-size: 44%;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+
+  nav input {
+    display: none;
+  }
+
+  .info-container {
+    padding-right: 10rem;
+  }
+
+  .info-container .info-desc {
+    margin-bottom: 4rem;
+  }
+
+  .movies-container {
+    grid-auto-columns: 21%;
+    overflow-x: scroll;
+  }
+
+  .slider-action {
+    display: none;
+  }
+}
